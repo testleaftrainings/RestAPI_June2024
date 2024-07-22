@@ -1,0 +1,117 @@
+Week6_Day2
+
+Agenda
+	1. Oauth in restassured
+		Service-Now
+			Client-id
+			client-secret
+			username
+			password
+			Generated one token - access token (Bearer)
+			oauth2 -> pass the access token
+		Parameters
+			queryparam endpoint -> ?
+				filter condition
+			pathparam endpoint -> /
+				to decide the path of the flow or unique key
+					Update Incident
+					Incident
+						sys_id1
+						sys_id2
+						sys_id3
+			formparam request body
+				In request body if we are sending few attributes in key and value pair
+	
+	2. Cookies
+		- extract the cookie
+		- apply the cookie
+	3. Swagger
+		- Used for documentation
+		- understanding on the APIs
+		- Technical lead/ Architect
+		
+		Swagger Editor
+			Online free
+			Create API documentation
+		Swagger Publisher (Swagger Hub)
+			Commercial
+			From editor we will extract the document and will published in internet
+		Postman Publisher
+			Free
+			maintain API documentation
+	
+	4. Interview Approach
+		Tell about yourself
+
+
+		Difference between status codes 401 and 403
+			401 - In the request when we give wrong credentials -> Unauthorized
+			403 - username and password is correct. But the access is denied to the resource
+			400 - Bad request - Credentials is right, access as well but invalid data in the request body
+
+			2X - Success
+				200
+				201
+				204 - No Content
+			4X - Client
+				400
+				401
+				403
+				404
+			5X - Server
+				500 - 
+
+		HTTP Methods
+			PUT
+			POST
+			GET
+			DELETE
+			PATCH
+			HEAD
+			OPTIONS	
+		
+
+		Core JAVA
+			What are the Oops concepts you have applied in your framework ?
+			Libraries - API automation
+
+		Test data
+		Mock ?
+
+
+
+
+		100 to 150 - 
+
+		sys_id -> issue_id
+
+		2 hrs and push to testing
+		1 day 
+
+
+		1st 
+
+
+		DB -> 10 members
+		10 open 
+
+		queryserver -> open connection
+
+
+		{
+		Sys_id
+		result:{
+			"": "",
+		}
+		}
+
+
+		Scenarios - 750 
+			Good to have
+				xml
+					field a, field b
+			Must to have
+				xml
+					all fields
+				json
+				txt

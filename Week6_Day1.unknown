@@ -1,0 +1,65 @@
+WEEK6_DAY1 Notes
+
+	Wiremock - Library
+		Mocking the APIs (Webservices)
+
+	Why API mocking is needed ?
+		Insprint automation - to validate the automation scripts until the application is ready
+		If the API development is not completed and your testing needs only response, you can mock the API
+
+		Thirdparty APIs - Payment gateway, GPS, [Google, facebook]
+			Mock the server response and integrate the application
+			When the third parties limit the number of request
+
+	Libaries
+		Wiremock
+			opensource
+			easy to implement
+			server-client architecture
+			multiple language like java, C#
+		easymock
+
+Implementation
+	1. Download and Install wiremock - https://wiremock.org/docs/download-and-installation/
+		a) Download the jar file
+		b) Ensure the java version is 11 or above
+		c) Open the command prompt -> go to path of jar file
+		d) Start the jar file
+	2. Create the Stub
+		a) Add maven dependency in the pom.xml -> https://wiremock.org/docs/download-and-installation/
+		b) Add the code to post the dummy response
+			i) Added the endpoint
+			ii) statuscode
+			iii) responsebody
+	3. Execute the API flow and confirm whether the mocked response is returned properly or not.
+			http -> 8080 (default port number)
+			https -> 443 (default port number)
+			If there is any queryparam remove the queryparam in the request
+
+
+Classroom - Service now Incident or change request
+
+	Record & Playback
+		1. whenever we are not sure in response format - record and reuse it
+		2. Server stop, the responses will disappear. To overcome this we can record and playback.
+
+		a) Go to the documentation and navigate to the page for record and playback
+		(http://localhost:8080/__admin/recorder/)
+		b) Start the server
+		c) Enter the service now hostname alone in Target URL
+		d) Start the recording
+		e) Come to script and enable the authentication
+		f) Send the request
+		g) Check the response for success
+		h) Stop the recording
+		i) Restart the server.
+		g) remove the auth
+		h) Hit the request and you can see the response from the mock.
+
+
+JsonSchema validation
+	Response validation
+	Validate whether response body has all attributes or not
+	response json to it's schema
+	add json-schema-validator in my pom.xml
+

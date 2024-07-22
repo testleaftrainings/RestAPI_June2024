@@ -1,0 +1,38 @@
+Agenda - Week3- Day1
+	Rest Assured basics
+	 Why Restassured ?
+
+Maven
+	src
+		main
+			java
+			resources - application.properties
+
+
+		test
+			java - unit testing
+			resources
+
+
+		
+
+Class Assignment: (30 mins)
+1. Get all the change request and print the status code and the response
+2. Get change request with filter condition -> to print only number and sys_id
+	a) print the response in the XML
+3. Get change request with filter condition -> to print only number and sys_id and add oner more filter to print only category as software. This needs to be printed in json
+
+
+
+
+
+
+
+
+
+
+
+
+select * from incident;
+
+select sys-id, number from incident where category = 'software';

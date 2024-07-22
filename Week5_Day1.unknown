@@ -1,0 +1,118 @@
+NoClassDefFoundException
+	RunTimeException
+		- During execution, JRE couldn't identify or locate a class then this exception will be triggered
+			- Because of the library
+				- replace the library
+					- where do you have library
+						- 
+
+surefire plugin -> runtime injection -> xml 
+
+
+
+API 
+	Application programming Interface
+		apache POI - API
+		webdriver - API
+
+
+
+		webservices
+			http - rest api
+			grpc - 
+			SOAP - 
+
+
+			Properties prop = new Properties(); -> Application
+			Properties prop2 = new Properties(); -> environment
+			Properties prop3 = new Properties(); -> customer
+			Properties prop4 = new Properties();
+
+			prop.loadProperty();
+			prop2.loadProperty();
+			prop3.loadProperty();
+
+
+
+			CustomerProfile
+				Firstname
+				lastName
+				age
+				phone
+				email
+				address
+				pincode
+
+
+				shadowDOM
+				shadowroot
+				shadowElement
+
+
+					ThreadLocal
+						browser
+
+
+							t1 -> driver, testName, test, parentTest
+							t2 -> driver
+							t3 -> driver
+							t4 -> driver
+							t5 -> driver
+
+
+List<Map<String, String>>
+
+
+testng.xml
+TestNG class file
+
+pom.xml -> testNG.xml or testng class file
+
+
+pom.xml -> testng.xml -> TestNG class
+
+
+
+@BeforeSuite - startReport(html report)
+	@BeforeTest - Define Test information
+		@BeforeClass - startTestCase -> Extent test -> start the extentTest object
+			@DataProvider -> fetchData()
+				@BeforeMethod - preCondition() -> load the browser, endpoint & creden
+					@Test - speaks about the exact test case
+						UI
+							Pageobjects
+								SeleniumBase
+									Browser	-> DriverInstance
+
+						API
+							RESTAssuredBase -> static class (can be called with classname.methodname)
+
+				@AfterMethod - quit the broser
+		@AfterClass - No
+	@AfterTest - No
+@AfterSuite - endResult()
+
+
+String testcase;
+
+method1(){
+	testcase = "TC001";
+}
+
+
+method2(){
+	if(testcase.equals("TC001")){
+		Sysout();
+	}
+}
+
+main(){
+	method1();
+	method2();
+
+}
+
+
+DriverInstance
+Reporter
+Selenium base

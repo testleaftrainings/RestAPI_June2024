@@ -1,0 +1,82 @@
+Week4_Notes
+			Day1 - Assertions & BDD
+
+	Assertions
+		- statusCode - 
+		- body
+			you will know the exact location and exact value - equalTo()
+			you will know the exact location and know only partial value - containsString()
+			you will know the exact value but not exact location - hasItem()
+
+
+Classroom Assignment
+Using chaining code
+
+a) Create -> add the validation for status code & short_description
+b) In get validate whether the sys_id created in the POST is returned or not
+
+
+
+BDD - Behaviour Driven development
+	Cucumber
+		3 layered framwork
+			Gherkin - Scenarios -> Specific format
+			Step definition -> define the steps in the java language
+			runner -> integrate gherkin and step definition
+	2 maven dependencies
+		cucumber-java - Will help you to construct the code (2nd layer)
+		cucumber-testng - To run the feature file using the unit testing framework
+	Eclipse -> Cucumber java plugin
+
+
+	Gherkin
+	 - Simple English language
+	 - to define your requirements/scenarios
+	 Keywords
+	 	Feature - Module/Functionality
+	 	Scenario - Test cases/use cases
+	 	Given - precondition
+	 	When - Test condition
+	 	Then - Expected Result
+	 	And - Conjunction keywords
+	 	But - Negative Expected Result
+	 	Background
+
+	 Create a feature file
+	 New file -> Filename + file extension
+	 nested inside src folder -> either in main or test
+
+
+	 Step definition layer
+	 	src/test/java
+	 		create a package -> and create a class file inside this
+	 		for every step -> separate method in the defn class
+
+
+
+And Set the user credentials for authenticating the system
+And Set the queryparameter in the input request
+And Set the contentType for the input request
+When User send POST request to Incident management API
+Then Validate the status code is 201
+
+https://reports.cucumber.io/reports/e4532338-1591-4ee9-bfff-7138bff81b9c
+
+
+Classroom Assignment
+	Add 2 maven dependencies
+	src/test
+	resources - Folder-> features-> Create a feature file
+	src/test/java -> create 2 packages -> stepDefn, runner
+
+	Start writing the feature file
+	Implement the steps in java layer(stepDefn)
+	Implement the runner and execute it
+
+
+
+
+
+
+	Jbehave
+	Jdave

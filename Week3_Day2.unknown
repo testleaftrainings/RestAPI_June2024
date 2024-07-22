@@ -1,0 +1,59 @@
+
+Week3_Day1&Day2
+		Five Step Process
+			Requirement
+			Endpoint
+			Construct request
+			Send Request
+			Validate response
+
+		CRUD Operations
+			GET - READ
+				No Queryparameter
+				One queryparameter
+				Multiple Queryparameter
+				Accept
+			
+			POST - Create
+				contentType is mandatory
+				Create a incident without request body
+				Create incident with request body as string
+				create incident with request body as file
+			
+			PUT - Update
+				Update the entire column in the table then we need to use PUT
+
+			PATCH - Update
+				Update the few entries column in the table then we need PATCH
+
+			DELETE - Delete
+
+Classroom Assignment (Service Now - Change request or Incident)
+1. Create a incident where input as string(json) and response as XML
+	a) print the sys_id from the xmlpath
+2. Update a incident where input as file and response as json.
+3. Delete the incident
+
+Print the response 
+print the status code.
+
+Chaining
+TestNG Annotation Hierachy
+
+@BeforeSuite
+	@BeforeTest
+		@BeforeClass - for every class this will get get executed -  4 times
+			@BeforeMethod - This will run for every @Test method - 4 times
+				@Test
+			@AfterMethod - 4 times
+		@AfterClass - 4 times
+	@AfterTest - 1 time
+@AfterSuite
+
+4 classes & 4 method one in each
+Create
+Update
+Get
+Delete
+
+log().all() -> given and then
